@@ -1,0 +1,9 @@
+Các bước quy trình phát triển phần mềm trong ngữ cảnh của React:
+b1: định nghĩa dữ liệu VD: const bird = [{}, {}, ...] ở đây là 1 mảng gồm nhiều object
+b2: Xây dựng thành phần(component function) bằng cách sử dụng cú pháp JSX & JS
+             Trong các component: định nghĩa giao diện người dùng và cách display props
+b3: Kết hợp thành phần
+             Sử dụng thành phần cha(App) kết hợp và render các thành phần con(Birds)
+b4: Render thành phần cha(App).
+quy trình trên giúp bạn tạo, cấu hình và hiển thị các thành phần React trong ứng dụng của mình 
+để hiển thị dữ liệu và giao diện người dùng một cách linh hoạt và tái sử dụng

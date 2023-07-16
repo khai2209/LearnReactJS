@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        //PostItem.js
+        function PostItem(props) {
+            return (
+                <div className="post-item">
+                    <img src={props.image} alt="JSX" />
+                    <h2 className="post-title">{props.title}</h2>
+                    <p className="post-desc">{props.description}</p>
+                    <p className="post-published">{props.publishedAt}</p>
+                </div>
+            )
+        }
+        //app.js
+        function App() {
+            return (
+                <div id="wrapper">
+                    <PostItem 
+                        title= "Alibaba"
+                        image= ""
+                        description= "I'm the flash"
+                        publishedAt= "1 ngay truowc"
+                    />
+                    <PostItem 
+                        title= "Shoppe"
+                        image= ""
+                        description= "I'm iron man"
+                        publishedAt= "2 ngay truowc"
+                    />
+                    <PostItem 
+                        title= "Lazada"
+                        image= ""
+                        description= "I'm the Huck"
+                        publishedAt= "3 ngay truowc"
+                    />
+
+                </div>
+            )
+        }
+        // const app = (
+        //     <div className="post-list">
+        //         <div className="post-item">
+        //             <img src="https://" />
+        //             <h2 className="post-title">C#(.NET)</h2>
+        //             <p className="post-desc">Banj cos kiens thuwcs ngoon</p>
+        //             <p className="post-published">Mot Ngayf truowcs</p>
+        //         </div>
+        //     </div>
+        // )
+
+        //index.js
+        ReactDOM.render(<App />, document.getElementById('root'))
+    </script>
+</body>
+
+</html>

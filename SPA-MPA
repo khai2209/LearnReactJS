@@ -1,0 +1,17 @@
+- SPA: Single-page Application     CSR- Client side rendering
+- MPA: Multiple-page Application   SSR- Server side rendering
+
+## Tốc độ
+-SPA: Nhanh
+     chỉ tải thêm dữ liệu mới khi cần
+-MPA: Chậm hơm
+     Sẽ tải hết trang khi truy cập và chuyển hướng
+## Bóc tách
+-SPA: FE và BE riêng biệt
+-MPA: FE và BE ở chung 1 project, phụ thuộc nhau nhiều hơn
+## UX
+-SPA: tạo trải nghiệm người dùng tốt hơn
+
+## Phụ thuộc JS
+SPA
+MPA có thể k cần.

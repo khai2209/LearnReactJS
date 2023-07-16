@@ -1,0 +1,5 @@
+hoisting: Đưa phần khai báo lên đầu phạm vi
+
+## var: Sau khi được hoisting sẽ khởi tạo giá trị là undefine
+## let,const: Sau khi được hoisting sẽ không được khởi tại giá trị, được đưa vaod 'Templeral dead zone'
+đặt là let vì let có thể gán lại 

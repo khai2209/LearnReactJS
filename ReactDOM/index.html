@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./app.js"></script>
+    <script crossorigin src="https://unpkg.com/react@17.0.0/umd/react.production.min.js"></script>
+    <title>ReactJs</title>
+</head>
+<body>  
+    <div id="container"></div>
+    <script>
+        const container = document.getElementById("container");
+        const h1 = document.createElement("h1");
+        h1.id = "okela";
+        h1.innerText = "okela";
+        console.dir(h1);//Obj
+
+        //obj assign
+        Object.assign(h1.style, {
+            color: 'blue',
+            backgroundColor: '#333',
+        });
+        //Trước khi thêm appendChild thì h1 còn ở trên bộ nhớ và chưa được render ra giao diện người dùng UI
+        //Hay nói đơn giản là appendChild được dùng để gắn 1 element vào 1 element khác
+        // document.body.appendChild(h1);
+        container.appendChild(h1);
+    </script>
+</body>
+</html>
